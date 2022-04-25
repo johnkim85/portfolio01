@@ -1,4 +1,4 @@
-package personalPractice;
+package pP1;
 
 interface Printable{
 	public void print(String doc);
