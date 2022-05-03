@@ -8,13 +8,92 @@ public class SUBWAYOrder{
 
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("*** Coffee 메뉴 ***");
-		System.out.println("1. 아메리카노 - 3,000원");
-		System.out.println("2. 카페라떼 - 4,000원");
-		System.out.println("3. 마끼아또 - 4,500원");
-		System.out.println("4. 바닐라라떼 - 4,500원");
-		System.out.print("위 메뉴 중 하나를 선택하세요. : ");
+		System.out.println("*** 메뉴 선택 ***");
+		System.out.println("1. 터키 베이컨 아보카도 - 15cm 6,900원 30cm 12,200원원");
+		System.out.println("2. 로티세리 바비큐 치킨 - 15cm 6,400원 30cm 11,600원");
+		System.out.println("3. 스테이크 & 치즈 - 15cm 6,900원 30cm 12,200원");
+		System.out.println("4. K-바비큐 - 15cm 6,400원 30cm 11,600원");
+		System.out.println("5. 풀드 포크 바비큐 - 15cm 6,300원 30cm 11,400원");
+		System.out.println("6. 써브웨이 클럽 - 15cm 6,200원 30cm 11,200원");
+		System.out.println("7. 쉬림프 - 15cm 6,200원 30cm 11,200원");
+		System.out.println("8. 스파이시 이탈리안 - 15cm 6,000원 30cm 11,000원");
+		System.out.println("9. 치킨 데리야끼 - 15cm 6,000원 30cm 11,000원");
+		System.out.println("10. 비엘티 - 15cm 5,700원 30cm 10,400원");
+		System.out.println("11. 이탈리안비엠티 - 15cm 6,400원 30cm 11,600원");
+		System.out.println("12. 미트볼 - 15cm 5,600원 30cm 10,300원");
+		System.out.println("13. 터키 - 15cm 5,600원 30cm 10,300원");
+		System.out.println("14. 참치 - 15cm 4,900원 30cm 9,400원");
+		System.out.println("15. 햄 - 15cm 4,900원	 30cm 9,400원");
+		System.out.println("16. 에그마요 - 15cm 4,600원 30cm 8,500원");
+		System.out.println("17. 베지 - 15cm 4,100원 30cm 7,600원");
+		System.out.println("18. 로스트 치킨 - 15cm 6,400원 30cm 11,600원");
+		System.out.print("샌드위치 선택: ");
 		int menuNo = sc.nextInt();
+		
+		System.out.println("*** 빵 길이 선택 ***");
+		System.out.println("1. 15cm");
+		System.out.println("2. 30cm");
+		System.out.print("빵 길이 선택: ");
+		int menuNo1 = sc.nextInt();
+		
+		System.out.println("*** 빵 선택 ***");
+		System.out.println("1. 화이트");
+		System.out.println("2. 파마산 오레가노");
+		System.out.println("3. 위트");
+		System.out.println("4. 허니오트");
+		System.out.println("5. 하티");
+		System.out.println("6. 플렛브래드");
+		System.out.print("빵 선택: ");
+		int menuNo2 = sc.nextInt();
+		
+		System.out.println("*** 토스팅 선택 ***");
+		System.out.println("1. 안함");
+		System.out.println("2. 토스팅 하기");
+		System.out.print("토스팅 선택: ");
+		int menuNo3 = sc.nextInt();
+		
+		System.out.println("*** 치즈 선택 ***");
+		System.out.println("1. 아메리칸치즈");
+		System.out.println("2. 슈레드치즈");
+		System.out.println("3. 모차렐라치즈");
+		System.out.println("4. 치즈제외");
+		System.out.print("치즈 선택: ");
+		int menuNo4 = sc.nextInt();
+		
+		System.out.println("*** 야채 선택 ***");
+		System.out.println("1. 양상추");
+		System.out.println("2. 토마토");
+		System.out.println("3. 오이");
+		System.out.println("4. 피망");
+		System.out.println("5. 양파");
+		System.out.println("6. 피클");
+		System.out.println("7. 올리브");
+		System.out.println("8. 할라피뇨");
+		System.out.println("9. 모든 야채 제외");
+		System.out.print("야채 선택: ");
+		int menuNo5 = sc.nextInt();
+//		다중 선택은 어떻게 하나요?
+		
+		System.out.println("*** 소스/시즈닝 선택 ***");
+		System.out.println("1. 알싸한 머스타드");
+		System.out.println("2. 상큼한 이탈리안드레싱");
+		System.out.println("3. 과일향 레드와인식초");
+		System.out.println("4. 달콤한 스위트 어니언");
+		System.out.println("5. 새콤달콤한 허너 머스타드");
+		System.out.println("6. 매콤달콤한 스위트 칠리");
+		System.out.println("7. 스모크 향 스모크 바비큐");
+		System.out.println("8. 크리미한 랜치");
+		System.out.println("9. 고소한 마요네즈");
+		System.out.println("10. 화끈하게 매운 핫 칠리");
+		System.out.println("11. 이국적으로 매콤한 사우스 웨스트 치폴레");
+		System.out.println("12. 알싸한 홀스래디쉬");
+		System.out.println("13. 이태리 엑스트라버진 올리브 오일");
+		System.out.println("14. 소금");
+		System.out.println("15. 후추");
+		System.out.println("16. 선택안함");
+		System.out.print("소스/시즈닝 선택: ");
+		int menuNo6 = sc.nextInt();
+//		3개까지 선택/3개 이상 선택시 '소스/시즈닝은 3개까지 선택가능합니다!' 알림
 		
 		System.out.print("주문 수량 >>> ");
 		int amount = sc.nextInt();
@@ -24,28 +103,86 @@ public class SUBWAYOrder{
 		
 		System.out.println();
 		
-		String coffeeStr = ""; // 커피 종류가 저장될 변수
-		int price = 0; // 커피 단가가 저장될 변수
+		String subwayStr = ""; // 샌드위치 종류가 저장될 변수
+		int price = 0; // 샌드위치 단가가 저장될 변수
 		
 		switch(menuNo) {
 			case 1 : 
-				coffeeStr = "아메리카노";
-				price = 3000;
+				subwayStr = "터키 베이컨 아보카도";
+				price = 6900 ;
 				break;
 			case 2 : 
-				coffeeStr = "카페라떼";
-				price = 4000;
+				subwayStr = "로티세리 바비큐 치킨";
+				price = 6400;
 				break;
 			case 3 : 
-				coffeeStr = "마끼아또";
-				price = 4500;
+				subwayStr = "스테이크 & 치즈";
+				price = 6900;
 				break;
 			case 4 : 
-				coffeeStr = "바닐라라떼";
-				price = 4500;
+				subwayStr = "K-바비큐";
+				price = 6400;
 				break;
+			case 5 : 
+				subwayStr = "풀드 포크 바비큐";
+				price = 6300;
+				break;
+			case 6 : 
+				subwayStr = "써브웨이 클럽";
+				price = 6200;
+				break;
+			case 7 : 
+				subwayStr = "쉬림프";
+				price = 6200;
+				break;
+			case 8 : 
+				subwayStr = "스파이시 이탈리안";
+				price = 6000;
+				break;
+			case 9 : 
+				subwayStr = "치킨 데리야끼";
+				price = 6000;
+				break;
+			case 10 : 
+				subwayStr = "비엘티";
+				price = 5700;
+				break;
+			case 11 : 
+				subwayStr = "이탈리안비엠티";
+				price = 6400;
+				break;
+			case 12 : 
+				subwayStr = "미트볼";
+				price = 5600;
+				break;
+			case 13 : 
+				subwayStr = "터키";
+				price = 5600;
+				break;
+			case 14 : 
+				subwayStr = "참치";
+				price = 4900;
+				break;
+			case 15 : 
+				subwayStr = "햄";
+				price = 4900;
+				break;
+			case 16 : 
+				subwayStr = "에그마요";
+				price = 4600;
+				break;
+			case 17 : 
+				subwayStr = "베지";
+				price = 4100;
+				break;
+			case 18 : 
+				subwayStr = "로스트 치킨";
+				price = 6400;
+				break;
+			
 			default :
-				System.out.println("선택하신 커피는 없는 메뉴입니다.");
+				System.out.println("선택하신 샌드위치는 없는 메뉴입니다.");
+//			빵 길이가 30cm일 때 가격은 어떻게 적용하나요?
 		}
 	
 	// 공급가액 계산(단가*수량)
@@ -61,13 +198,19 @@ public class SUBWAYOrder{
 		int change = money - total;
 		
 		// 화면에 출력해 보자.
-		System.out.println("주문한 메뉴 :" + coffeeStr);
-		System.out.printf("커피단가 : %,d원\n", price);
+		System.out.println("메뉴 :" + subwayStr);
+//		System.out.println("빵 길이 :" + subwayStr);
+//		System.out.println("빵 :" + subwayStr);
+//		System.out.println("토스팅 :" + subwayStr);
+//		System.out.println("치즈 :" + subwayStr);
+//		System.out.println("야채 :" + subwayStr);
+//		System.out.println("소스/시즈밍 :" + subwayStr);
+		System.out.printf("샌드위치단가 : %,d원\n", price);
 		System.out.printf("주문수량 : %,d\n", amount);
-		System.out.printf("입 금 액 : %,d원\n", money);
+		System.out.printf("입금액 : %,d원\n", money);
 		System.out.printf("공급가액 : %,d원\n", sum);
 		System.out.printf("부가세액 : %,d원\n", vat);
-		System.out.printf("총 금 액 : %,d원\n", total);
+		System.out.printf("총금액 : %,d원\n", total);
 		System.out.printf("거스름돈 : %,d원\n", change);
 		
 		sc.close();
