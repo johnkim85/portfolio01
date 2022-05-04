@@ -7,6 +7,7 @@ public class SUBWAYOrder{
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
+//		System.in은 키보드를 의미한다!
 		
 		System.out.println("*** 메뉴 선택 ***");
 		System.out.println("1. 터키 베이컨 아보카도 - 15cm 6,900원 30cm 12,200원원");
@@ -30,12 +31,22 @@ public class SUBWAYOrder{
 		System.out.print("샌드위치 선택: ");
 		int menuNo = sc.nextInt();
 		
+		System.out.println();
+//		자바 줄바꿈
 		System.out.println("*** 빵 길이 선택 ***");
 		System.out.println("1. 15cm");
 		System.out.println("2. 30cm");
 		System.out.print("빵 길이 선택: ");
 		int menuNo1 = sc.nextInt();
+		String breadLength;
+		if(menuNo1==1) {
+			breadLength="15cm";
+		}else {
+			breadLength="30cm";
+		}
+//		교수님이 추가해준 문 41~46
 		
+		System.out.println();
 		System.out.println("*** 빵 선택 ***");
 		System.out.println("1. 화이트");
 		System.out.println("2. 파마산 오레가노");
@@ -45,13 +56,46 @@ public class SUBWAYOrder{
 		System.out.println("6. 플렛브래드");
 		System.out.print("빵 선택: ");
 		int menuNo2 = sc.nextInt();
+		String bread="";
+//		if else 문 전의 String 문의 형식과 조금 다름!
+		switch(menuNo2) {
+		case 1 : 
+			bread = "화이트";
+			break;
+		case 2 : 
+			bread = "파마산 오레가노";
+			break;
+		case 3 : 
+			bread = "위트";
+			break;
+		case 4 : 
+			bread = "허니오트";
+			break;
+		case 5 : 
+			bread = "하티";
+			break;
+		case 6 : 
+			bread = "플렛브래드";
+			break;
+		default :
+			System.out.println("선택하신 빵은 없는 메뉴입니다.");
+//		빵 길이가 30cm일 때 가격은 어떻게 적용하나요?
+	}
 		
+		System.out.println();
 		System.out.println("*** 토스팅 선택 ***");
 		System.out.println("1. 안함");
 		System.out.println("2. 토스팅 하기");
 		System.out.print("토스팅 선택: ");
 		int menuNo3 = sc.nextInt();
+		String toasting;
+		if(menuNo3==1) {
+			toasting="안함";
+		}else {
+			toasting="토스팅 하기";
+		}
 		
+		System.out.println();
 		System.out.println("*** 치즈 선택 ***");
 		System.out.println("1. 아메리칸치즈");
 		System.out.println("2. 슈레드치즈");
@@ -59,7 +103,26 @@ public class SUBWAYOrder{
 		System.out.println("4. 치즈제외");
 		System.out.print("치즈 선택: ");
 		int menuNo4 = sc.nextInt();
+		String cheese="";
+//		if else 문 전의 String 문의 형식과 조금 다름!
+		switch(menuNo4) {
+		case 1 : 
+			cheese = "아메리칸치즈";
+			break;
+		case 2 : 
+			cheese = "슈레드치즈";
+			break;
+		case 3 : 
+			cheese = "모차렐라치즈";
+			break;
+		case 4 : 
+			cheese = "치즈제외";
+			break;
+		default :
+			System.out.println("선택하신 치즈는 없는 메뉴입니다.");
+	}
 		
+		System.out.println();
 		System.out.println("*** 야채 선택 ***");
 		System.out.println("1. 양상추");
 		System.out.println("2. 토마토");
@@ -72,14 +135,37 @@ public class SUBWAYOrder{
 		System.out.println("9. 모든 야채 제외");
 		System.out.print("야채 선택: ");
 		int menuNo5 = sc.nextInt();
+		String vegetable;
+		if(menuNo5==1)
+			vegetable="양상추";
+		else if(menuNo5==2)
+			vegetable="토마토";
+		else if(menuNo5==3)
+			vegetable="오이";
+		else if(menuNo5==4)
+			vegetable="피망";
+		else if(menuNo5==5)
+			vegetable="양파";
+		else if(menuNo5==6)
+			vegetable="피클";
+		else if(menuNo5==7)
+			vegetable="올리브";
+		else if(menuNo5==8)
+			vegetable="할라피뇨";
+		else if(menuNo5==9)
+			vegetable="모든 야채 제외";
+		else
+			vegetable="선택하신 야채는 없는 메뉴입니다.";
 //		다중 선택은 어떻게 하나요?
+//		switch break 문 보다는 if else if else 문 사용 추천
 		
+		System.out.println();
 		System.out.println("*** 소스/시즈닝 선택 ***");
 		System.out.println("1. 알싸한 머스타드");
 		System.out.println("2. 상큼한 이탈리안드레싱");
 		System.out.println("3. 과일향 레드와인식초");
 		System.out.println("4. 달콤한 스위트 어니언");
-		System.out.println("5. 새콤달콤한 허너 머스타드");
+		System.out.println("5. 새콤달콤한 허니 머스타드");
 		System.out.println("6. 매콤달콤한 스위트 칠리");
 		System.out.println("7. 스모크 향 스모크 바비큐");
 		System.out.println("8. 크리미한 랜치");
@@ -93,11 +179,48 @@ public class SUBWAYOrder{
 		System.out.println("16. 선택안함");
 		System.out.print("소스/시즈닝 선택: ");
 		int menuNo6 = sc.nextInt();
+		String sauce;
+		if(menuNo5==1)
+			sauce="알싸한 머스타드";
+		else if(menuNo5==2)
+			sauce="상큼한 이탈리안드레싱";
+		else if(menuNo5==3)
+			sauce="과일향 레드와인식초";
+		else if(menuNo5==4)
+			sauce="달콤한 스위트 어니언";
+		else if(menuNo5==5)
+			sauce="새콤달콤한 허니 머스타트";
+		else if(menuNo5==6)
+			sauce="매콤달콤한 스위트 칠리";
+		else if(menuNo5==7)
+			sauce="스모크 향 스모크 바비큐";
+		else if(menuNo5==8)
+			sauce="크리미한 랜치";
+		else if(menuNo5==9)
+			sauce="고소한 마요네즈";
+		else if(menuNo5==10)
+			sauce="화끈하게 매운 핫 칠리";
+		else if(menuNo5==11)
+			sauce="이국적으로 매콤한 사우스 웨스트 치폴레";
+		else if(menuNo5==12)
+			sauce="알싸한 홀스래디쉬";
+		else if(menuNo5==13)
+			sauce="이태리 엑스트라버진 올리브 오일";
+		else if(menuNo5==14)
+			sauce="소금";
+		else if(menuNo5==15)
+			sauce="후추";
+		else if(menuNo5==16)
+			sauce="선택안함";
+		else
+			sauce="선택하신 소스/시즈닝은 없는 메뉴입니다.";
 //		3개까지 선택/3개 이상 선택시 '소스/시즈닝은 3개까지 선택가능합니다!' 알림
 		
+		System.out.println();
 		System.out.print("주문 수량 >>> ");
 		int amount = sc.nextInt();
 		
+		System.out.println();
 		System.out.print("입금액 >>> ");
 		int money = sc.nextInt();
 		
@@ -198,13 +321,13 @@ public class SUBWAYOrder{
 		int change = money - total;
 		
 		// 화면에 출력해 보자.
-		System.out.println("메뉴 :" + subwayStr);
-//		System.out.println("빵 길이 :" + subwayStr);
-//		System.out.println("빵 :" + subwayStr);
-//		System.out.println("토스팅 :" + subwayStr);
-//		System.out.println("치즈 :" + subwayStr);
-//		System.out.println("야채 :" + subwayStr);
-//		System.out.println("소스/시즈밍 :" + subwayStr);
+		System.out.println("메뉴 : " + subwayStr);
+		System.out.println("빵 길이 : " + breadLength);
+		System.out.println("빵 : " + bread);
+		System.out.println("토스팅 : " + toasting);
+		System.out.println("치즈 : " + cheese);
+		System.out.println("야채 : " + vegetable);
+		System.out.println("소스/시즈닝 : " + sauce);
 		System.out.printf("샌드위치단가 : %,d원\n", price);
 		System.out.printf("주문수량 : %,d\n", amount);
 		System.out.printf("입금액 : %,d원\n", money);
