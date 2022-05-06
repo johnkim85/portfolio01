@@ -48,17 +48,24 @@ public class SUBWAYOrder{
 		
 		System.out.println();
 		System.out.println("*** 빵 선택 ***");
-		System.out.println("1. 화이트");
-		System.out.println("2. 파마산 오레가노");
-		System.out.println("3. 위트");
-		System.out.println("4. 허니오트");
-		System.out.println("5. 하티");
-		System.out.println("6. 플렛브래드");
+//		System.out.println("1. 화이트");
+//		System.out.println("2. 파마산 오레가노");
+//		System.out.println("3. 위트");
+//		System.out.println("4. 허니오트");
+//		System.out.println("5. 하티");
+//		System.out.println("6. 플렛브래드");
+//		System.out.print("빵 선택: ");
+		String[] arr= {"1.화이트", "2.파마산 오레가노", "3.위트", "4.허니오트", "5.하티", "6.플랫브레드"};
+		for(int i=0;i<arr.length;i++) {
+			System.out.println(arr[i]);
+		}
 		System.out.print("빵 선택: ");
-		int menuNo2 = sc.nextInt();
+//		Scanner sc=new Scanner(System.in);
+		int num1=sc.nextInt();
+//		int menuNo2 = sc.nextInt();
 		String bread="";
 //		if else 문 전의 String 문의 형식과 조금 다름!
-		switch(menuNo2) {
+		switch(num1) {
 		case 1 : 
 			bread = "화이트";
 			break;
@@ -97,15 +104,21 @@ public class SUBWAYOrder{
 		
 		System.out.println();
 		System.out.println("*** 치즈 선택 ***");
-		System.out.println("1. 아메리칸치즈");
-		System.out.println("2. 슈레드치즈");
-		System.out.println("3. 모차렐라치즈");
-		System.out.println("4. 치즈제외");
+//		System.out.println("1. 아메리칸치즈");
+//		System.out.println("2. 슈레드치즈");
+//		System.out.println("3. 모차렐라치즈");
+//		System.out.println("4. 치즈제외");
+//		System.out.print("치즈 선택: ");
+		String[] arr1 = {"1.아메리칸치즈", "2.슈레드치즈", "3.모차렐라치즈", "4.치즈 제외"};
+		for(int i=0;i<arr1.length;i++) {
+		System.out.println(arr1[i]);
+		}
 		System.out.print("치즈 선택: ");
-		int menuNo4 = sc.nextInt();
+		int num2=sc.nextInt();
+//		int menuNo4 = sc.nextInt();
 		String cheese="";
 //		if else 문 전의 String 문의 형식과 조금 다름!
-		switch(menuNo4) {
+		switch(num2) {
 		case 1 : 
 			cheese = "아메리칸치즈";
 			break;
