@@ -180,11 +180,6 @@ public class SUBWAYOrder{
 		
 		System.out.println();
 		System.out.println("*** 치즈 선택 ***");
-//		System.out.println("1. 아메리칸치즈");
-//		System.out.println("2. 슈레드치즈");
-//		System.out.println("3. 모차렐라치즈");
-//		System.out.println("4. 치즈제외");
-//		System.out.print("치즈 선택: ");
 		String[] arr1 = {"1. 아메리칸치즈", "2. 슈레드치즈", "3. 모차렐라치즈", "4. 치즈 제외"};
 		for(int i=0;i<arr1.length;i++) {
 		System.out.println(arr1[i]);
@@ -212,41 +207,6 @@ public class SUBWAYOrder{
 	}
 		
 		System.out.println();
-//		System.out.println("*** 야채 선택 ***");
-//		System.out.println("1. 양상추");
-//		System.out.println("2. 토마토");
-//		System.out.println("3. 오이");
-//		System.out.println("4. 피망");
-//		System.out.println("5. 양파");
-//		System.out.println("6. 피클");
-//		System.out.println("7. 올리브");
-//		System.out.println("8. 할라피뇨");
-//		System.out.println("9. 모든 야채 제외");
-//		System.out.print("야채 선택: ");
-//		int menuNo5 = sc.nextInt();
-//		String vegetable;
-//		if(menuNo5==1)
-//			vegetable="양상추";
-//		else if(menuNo5==2)
-//			vegetable="토마토";
-//		else if(menuNo5==3)
-//			vegetable="오이";
-//		else if(menuNo5==4)
-//			vegetable="피망";
-//		else if(menuNo5==5)
-//			vegetable="양파";
-//		else if(menuNo5==6)
-//			vegetable="피클";
-//		else if(menuNo5==7)
-//			vegetable="올리브";
-//		else if(menuNo5==8)
-//			vegetable="할라피뇨";
-//		else if(menuNo5==9)
-//			vegetable="모든 야채 제외";
-//		else
-//			vegetable="선택하신 야채는 없는 메뉴입니다.";
-//		다중 선택은 어떻게 하나요?
-//		switch break 문 보다는 if else if else 문 사용 추천
 		Vegetable[] vegetables=new Vegetable[]{
 				new Vegetable("양상추"),new Vegetable("토마토"),new Vegetable("오이"),
 				new Vegetable("피망"),new Vegetable("양파"),new Vegetable("피클"),
@@ -287,63 +247,8 @@ public class SUBWAYOrder{
 				break;
 			}
 		}
-		System.out.println();
 		
-//		System.out.println();
-//		System.out.println("*** 소스/시즈닝 선택 ***");
-//		System.out.println("1. 알싸한 머스타드");
-//		System.out.println("2. 상큼한 이탈리안드레싱");
-//		System.out.println("3. 과일향 레드와인식초");
-//		System.out.println("4. 달콤한 스위트 어니언");
-//		System.out.println("5. 새콤달콤한 허니 머스타드");
-//		System.out.println("6. 매콤달콤한 스위트 칠리");
-//		System.out.println("7. 스모크 향 스모크 바비큐");
-//		System.out.println("8. 크리미한 랜치");
-//		System.out.println("9. 고소한 마요네즈");
-//		System.out.println("10. 화끈하게 매운 핫 칠리");
-//		System.out.println("11. 이국적으로 매콤한 사우스 웨스트 치폴레");
-//		System.out.println("12. 알싸한 홀스래디쉬");
-//		System.out.println("13. 이태리 엑스트라버진 올리브 오일");
-//		System.out.println("14. 소금");
-//		System.out.println("15. 후추");
-//		System.out.println("16. 선택안함");
-//		System.out.print("소스/시즈닝 선택: ");
-//		int menuNo6 = sc.nextInt();
-//		String sauce;
-//		if(menuNo5==1)
-//			sauce="알싸한 머스타드";
-//		else if(menuNo5==2)
-//			sauce="상큼한 이탈리안드레싱";
-//		else if(menuNo5==3)
-//			sauce="과일향 레드와인식초";
-//		else if(menuNo5==4)
-//			sauce="달콤한 스위트 어니언";
-//		else if(menuNo5==5)
-//			sauce="새콤달콤한 허니 머스타트";
-//		else if(menuNo5==6)
-//			sauce="매콤달콤한 스위트 칠리";
-//		else if(menuNo5==7)
-//			sauce="스모크 향 스모크 바비큐";
-//		else if(menuNo5==8)
-//			sauce="크리미한 랜치";
-//		else if(menuNo5==9)
-//			sauce="고소한 마요네즈";
-//		else if(menuNo5==10)
-//			sauce="화끈하게 매운 핫 칠리";
-//		else if(menuNo5==11)
-//			sauce="이국적으로 매콤한 사우스 웨스트 치폴레";
-//		else if(menuNo5==12)
-//			sauce="알싸한 홀스래디쉬";
-//		else if(menuNo5==13)
-//			sauce="이태리 엑스트라버진 올리브 오일";
-//		else if(menuNo5==14)
-//			sauce="소금";
-//		else if(menuNo5==15)
-//			sauce="후추";
-//		else if(menuNo5==16)
-//			sauce="선택안함";
-//		else
-//			sauce="선택하신 소스/시즈닝은 없는 메뉴입니다.";
+		System.out.println();
 //		3개까지 선택/3개 이상 선택시 '소스/시즈닝은 3개까지 선택가능합니다!' 알림
 		Source[] sources=new Source[] {
 				new Source("알싸한 머스타드"),new Source("상큼한 이탈리안드레싱"),
@@ -399,85 +304,165 @@ public class SUBWAYOrder{
 		
 		String subwayStr = ""; // 샌드위치 종류가 저장될 변수
 		int price = 0; // 샌드위치 단가가 저장될 변수
-		
-		switch(menuNo) {
-			case 1 : 
-				subwayStr = "터키 베이컨 아보카도";
-				price = 6900 ;
-				break;
-			case 2 : 
-				subwayStr = "로티세리 바비큐 치킨";
-				price = 6400;
-				break;
-			case 3 : 
-				subwayStr = "스테이크 & 치즈";
-				price = 6900;
-				break;
-			case 4 : 
-				subwayStr = "K-바비큐";
-				price = 6400;
-				break;
-			case 5 : 
-				subwayStr = "풀드 포크 바비큐";
-				price = 6300;
-				break;
-			case 6 : 
-				subwayStr = "써브웨이 클럽";
-				price = 6200;
-				break;
-			case 7 : 
-				subwayStr = "쉬림프";
-				price = 6200;
-				break;
-			case 8 : 
-				subwayStr = "스파이시 이탈리안";
-				price = 6000;
-				break;
-			case 9 : 
-				subwayStr = "치킨 데리야끼";
-				price = 6000;
-				break;
-			case 10 : 
-				subwayStr = "비엘티";
-				price = 5700;
-				break;
-			case 11 : 
-				subwayStr = "이탈리안비엠티";
-				price = 6400;
-				break;
-			case 12 : 
-				subwayStr = "미트볼";
-				price = 5600;
-				break;
-			case 13 : 
-				subwayStr = "터키";
-				price = 5600;
-				break;
-			case 14 : 
-				subwayStr = "참치";
-				price = 4900;
-				break;
-			case 15 : 
-				subwayStr = "햄";
-				price = 4900;
-				break;
-			case 16 : 
-				subwayStr = "에그마요";
-				price = 4600;
-				break;
-			case 17 : 
-				subwayStr = "베지";
-				price = 4100;
-				break;
-			case 18 : 
-				subwayStr = "로스트 치킨";
-				price = 6400;
-				break;
-			
-			default :
-				System.out.println("선택하신 샌드위치는 없는 메뉴입니다.");
 //			빵 길이가 30cm일 때 가격은 어떻게 적용하나요?
+		if (breadLengthNum == 1){
+			switch(menuNo) {
+				case 1 : 
+					subwayStr = "터키 베이컨 아보카도";
+					price = 6900 ;
+					break;
+				case 2 : 
+					subwayStr = "로티세리 바비큐 치킨";
+					price = 6400;
+					break;
+				case 3 : 
+					subwayStr = "스테이크 & 치즈";
+					price = 6900;
+					break;
+				case 4 : 
+					subwayStr = "K-바비큐";
+					price = 6400;
+					break;
+				case 5 : 
+					subwayStr = "풀드 포크 바비큐";
+					price = 6300;
+					break;
+				case 6 : 
+					subwayStr = "써브웨이 클럽";
+					price = 6200;
+					break;
+				case 7 : 
+					subwayStr = "쉬림프";
+					price = 6200;
+					break;
+				case 8 : 
+					subwayStr = "스파이시 이탈리안";
+					price = 6000;
+					break;
+				case 9 : 
+					subwayStr = "치킨 데리야끼";
+					price = 6000;
+					break;
+				case 10 : 
+					subwayStr = "비엘티";
+					price = 5700;
+					break;
+				case 11 : 
+					subwayStr = "이탈리안비엠티";
+					price = 6400;
+					break;
+				case 12 : 
+					subwayStr = "미트볼";
+					price = 5600;
+					break;
+				case 13 : 
+					subwayStr = "터키";
+					price = 5600;
+					break;
+				case 14 : 
+					subwayStr = "참치";
+					price = 4900;
+					break;
+				case 15 : 
+					subwayStr = "햄";
+					price = 4900;
+					break;
+				case 16 : 
+					subwayStr = "에그마요";
+					price = 4600;
+					break;
+				case 17 : 
+					subwayStr = "베지";
+					price = 4100;
+					break;
+				case 18 : 
+					subwayStr = "로스트 치킨";
+					price = 6400;
+					break;
+				default :
+					System.out.println("선택하신 샌드위치는 없는 메뉴입니다.");
+	//			빵 길이가 30cm일 때 가격은 어떻게 적용하나요?
+			}
 		}
+		else if (breadLengthNum == 2){
+				switch(menuNo) {
+				case 1 : 
+					subwayStr = "터키 베이컨 아보카도";
+					price = 12200 ;
+					break;
+				case 2 : 
+					subwayStr = "로티세리 바비큐 치킨";
+					price = 11600;
+					break;
+				case 3 : 
+					subwayStr = "스테이크 & 치즈";
+					price = 12200;
+					break;
+				case 4 : 
+					subwayStr = "K-바비큐";
+					price = 11600;
+					break;
+				case 5 : 
+					subwayStr = "풀드 포크 바비큐";
+					price = 11400;
+					break;
+				case 6 : 
+					subwayStr = "써브웨이 클럽";
+					price = 11200;
+					break;
+				case 7 : 
+					subwayStr = "쉬림프";
+					price = 11200;
+					break;
+				case 8 : 
+					subwayStr = "스파이시 이탈리안";
+					price = 11000;
+					break;
+				case 9 : 
+					subwayStr = "치킨 데리야끼";
+					price = 11000;
+					break;
+				case 10 : 
+					subwayStr = "비엘티";
+					price = 10400;
+					break;
+				case 11 : 
+					subwayStr = "이탈리안비엠티";
+					price = 11600;
+					break;
+				case 12 : 
+					subwayStr = "미트볼";
+					price = 10300;
+					break;
+				case 13 : 
+					subwayStr = "터키";
+					price = 10300;
+					break;
+				case 14 : 
+					subwayStr = "참치";
+					price = 9400;
+					break;
+				case 15 : 
+					subwayStr = "햄";
+					price = 9400;
+					break;
+				case 16 : 
+					subwayStr = "에그마요";
+					price = 8500;
+					break;
+				case 17 : 
+					subwayStr = "베지";
+					price = 7600;
+					break;
+				case 18 : 
+					subwayStr = "로스트 치킨";
+					price = 11600;
+					break;
+				default :
+					System.out.println("선택하신 샌드위치는 없는 메뉴입니다.");
+			}
+		}
+
 		
 	
 	// 공급가액 계산(단가*수량)
