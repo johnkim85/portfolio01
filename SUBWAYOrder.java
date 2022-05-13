@@ -265,24 +265,26 @@ public class SUBWAYOrder{
 		for(int i=0;i<sources.length;i++) {
 			System.out.println((i+1)+". "+sources[i].getVarieties());
 		}
-		System.out.println(sources.length+1+". 선택완료");
+		System.out.println(sources.length+1+". 선택 완료");
 		
 		System.out.print("소스/시즈닝 선택(3개까지 가능): ");
 		
 		// 중복선택 안되도록
-		
-		int sourcesCount=0;
-		for(int i=0;sourcesCount<3;i++) { 
+		List<Source> sourceList=new ArrayList<Source>();
+//		int sourcesCount=0;
+		for(int i=0;i<3;i++) { 
 			int sourcesNum=sc.nextInt();
 			
 			if(sourcesNum-1<sources.length) {
 //				mySandwich.setSource((sources[sourcesNum-1]));
 				
 //				mySandwich.getSource().add(sources[sourcesNum-1]);
-				sourcesCount++;
-				
+				sourceList.add(sources[sourcesNum-1]);
 			} else if(sourcesNum-1==sources.length) {
+				sourceList.clear();
 				break;
+//			} else if(sourcesNum-1==sources.length+1) {
+//				break;
 			} else {
 				break;
 			}			
@@ -493,7 +495,18 @@ public class SUBWAYOrder{
 		}
 		System.out.println();
 //		야채 : [Lmyungji.Vegetable;@506e6d5e
-		System.out.println("소스/시즈닝 : " + sources);
+		System.out.print("소스/시즈닝 : ");
+		if(sourceList.size()!=0) {
+			for(int i=0;i<sourceList.size();i++) {
+				System.out.print(sourceList.get(i).getVarieties()+" ");
+			}
+		} 
+		else {
+			System.out.print("모두 제외");
+		}
+		System.out.println();
+//		System.out.println();
+	
 //		System.out.println("소스/시즈닝 : " + sources[sourcesNum-1]);
 //		소스/시즈닝 : [Lmyungji.Source;@96532d6
 		System.out.printf("샌드위치단가 : %,d원\n", price);
@@ -505,5 +518,7 @@ public class SUBWAYOrder{
 		System.out.printf("거스름돈 : %,d원\n", change);
 		
 		sc.close();
+		}
 	}
-}
+
+
