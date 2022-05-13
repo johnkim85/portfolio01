@@ -175,7 +175,8 @@ public class SUBWAYOrder{
 		for(int i=0;i<sources.length;i++) {
 			System.out.println((i+1)+". "+sources[i].getVarieties());
 		}
-		System.out.println(sources.length+1+". 선택 완료");
+		System.out.println(sources.length+1+". 선택안함");
+		System.out.println(sources.length+2+". 선택 완료");
 		
 		System.out.print("소스/시즈닝 선택(3개까지 가능): ");
 
@@ -188,9 +189,11 @@ public class SUBWAYOrder{
 				sourceList.add(sources[sourcesNum-1]);
 			} else if(sourcesNum-1==sources.length) {
 				sourceList.clear();
-				
 				break;
-			} else {
+			} else if(sourcesNum-1==sources.length+1) {
+				break;
+			}
+			else {
 				break;
 			}			
 		}
